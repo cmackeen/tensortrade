@@ -1,4 +1,4 @@
-def ichimoku(price_objs:Series, period=9:float):
+def ichimoku(price_objs, period=9):
     prdf = price_objs
     # Tenkan-sen (Conversion Line): (short-period high + short-period low)/2))
     period9_high = prdf.rolling(window=period).max()
